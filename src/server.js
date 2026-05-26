@@ -23,6 +23,9 @@ app.use(
 
 app.use(express.json());
 
+console.log("productRoutes:", productRoutes);
+console.log("authRoutes:", authRoutes);
+console.log("orderRoutes:", orderRoutes);
 // ── API Routes ──────────────────────────────────────────────
 app.use("/api/products", productRoutes);
 app.use("/api/auth", authRoutes);
